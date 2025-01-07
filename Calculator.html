@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/bootstrap.css">
+    <title>Calculator</title>
+    <style>
+
+        .td{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .result-in-row{
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 25px;
+        }
+        #result{
+            padding: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container h-100 my-5">
+        <div class="row my-5">
+            <h1 class="text-center mx-auto my-5">Calculator</h1>
+            <table class="table mt-2 p-5 table-bordered  mx-auto h-75 table-primary shadow-lg">
+                <tr id="turn" class="result-in-row table-light ">
+                    <td colspan="4" class="text-center px-5" id="result"></td>
+                </tr>
+                <tr class="increase-size-row">
+                    <td class="m-5 rounded td" onclick="eventClick('AC')" >AC</td>
+                    <td class="m-5 rounded td" onclick="eventClick('r')" >r</td>
+                    <td class="m-5 rounded td" onclick="eventClick('(')">(</td>
+                    <td class="m-5 rounded td" onclick="eventClick(')')">)</td>
+                    
+                    
+                </tr>
+                <tr class="increase-size-row">
+                    <td class="m-5 rounded td" onclick="eventClick('7')">7</td>
+                    <td class="m-5 rounded td" onclick="eventClick('8')">8</td>
+                    <td class="m-5 rounded td" onclick="eventClick('9')">9</td>
+                    <td class="m-5 rounded td" onclick="eventClick('*')">*</td>
+                    
+                </tr>
+                <tr class="increase-size-row">
+                    <td class="m-5 rounded td" onclick="eventClick('4')">4</td>
+                    <td class="m-5 rounded td" onclick="eventClick('5')">5</td>
+                    <td class="m-5 rounded td" onclick="eventClick('6')">6</td>
+                    <td class="m-5 rounded td" onclick="eventClick('-')">-</td>
+                    
+                </tr>
+                <tr class="increase-size-row">
+                    <td class="m-5 rounded td" onclick="eventClick('1')">1</td>
+                    <td class="m-5 rounded td" onclick="eventClick('2')">2</td>
+                    <td class="m-5 rounded td" onclick="eventClick('3')">3</td>
+                    <td class="m-5 rounded td" onclick="eventClick('+')">+</td>
+                    
+                </tr>
+                <tr class="increase-size-row">
+                    <td class="m-5 rounded td" onclick="eventClick('%')">%</td>
+                    <td class="m-5 rounded td" onclick="eventClick('0')">0</td>
+                    <td class="m-5 rounded td" onclick="eventClick('/')">/</td>
+                    <td class="m-5 rounded td" onclick="eventClick('=')">=</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="files_js/calculator.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
